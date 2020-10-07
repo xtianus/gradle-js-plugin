@@ -1,9 +1,7 @@
 # Fix of original version for Gradle 6.5.1
-You can download the jar from the "dist" folder or build it yourself:
+You can download the jar from the "dist" folder or build it yourself.
 
-1a. Download the jar from the "dist" folder, or
-1b. Clone the repo (or download the zip) then run "gradlew build" to create the jar in /build/libs.
-2. In your build.gradle:
+Then in your build.gradle:
 
 ```
 buildscript {
