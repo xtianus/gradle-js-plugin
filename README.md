@@ -1,4 +1,23 @@
-# Gradle Javascript Plugin! [![Build Status](https://secure.travis-ci.org/eriwen/gradle-js-plugin.png)](http://travis-ci.org/eriwen/gradle-js-plugin)
+# Fix of original version for Gradle 6.5.1
+1. Clone the repo (or download the zip) then run "gradlew build" to create the jar in /build/libs.
+2. In your build.gradle:
+
+```
+buildscript {
+  dependencies {
+    classpath files("..somepath../gradle-js-plugin-2.14.1-x.jar")
+  }
+}
+plugins {
+  id "com.eriwen.gradle.js" version "2.14.1"
+}
+```
+
+Note that the id version is different from the jar name.
+
+Original doc follows:
+
+# Gradle Javascript Plugin!
 Aiming to be the *simplest* way to manage your JavaScript in a build.
 
 # Quick Start
